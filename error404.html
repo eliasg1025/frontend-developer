@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Muli&display=swap" rel="stylesheet">
+    <title>Platzi Video</title>
+    <link rel="stylesheet" href="css/index.css">
+</head>
+<style>
+    body {
+        margin: 0;
+        font-family: 'Muli', sans-serif;
+        background: #8f57fd;
+    }
+
+    .header {
+        align-items: center;
+        background: #8f57fd;
+        color: white;
+        display: flex;
+        height: 100px;
+        justify-content: space-between;
+        top: 0px;
+        width: 100%;
+    }
+
+    .header__img {
+        margin-left: 30px;
+        width: 200px;
+    }
+
+    .not-found {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        height: calc(100vh - 200px);
+        border-radius: 0px 0px 40px 40px;
+    }
+
+    .not-found__title {
+        color: white;
+        font-size: 90px;
+        margin: 15px 0;
+    }
+
+    .not-found__subtitle {
+        color: white;
+        font-size: 20px;
+    }
+
+    .footer {
+        align-items: center;
+        background-color: #8f57fd;
+        display: flex;
+        height: 100px;
+        width: 100%;
+    }
+
+    .footer a {
+        color: white;
+        cursor: pointer;
+        font-size: 14px;
+        padding-left: 30px;
+        text-decoration: none;
+    }
+
+    .footer a:hover {
+        text-decoration: underline;
+    }
+
+    .animated {
+        animation-duration: 2.5s;
+        animation-fill-mode: both;
+        animation-iteration-count: infinite;
+    }
+
+    @keyframes pulse {
+        0% {transform: scale(1);}
+        50% {transform: scale(1.1);}
+        100% {transform: scale(1);}
+    }
+
+    .pulse {
+        animation-name: pulse;
+        animation-duration: 2s;
+    }
+
+    @media only screen and (max-width: 600px) {
+        .main__description--title {
+            font-size: 30px;
+        }
+
+        .footer {
+            align-items: flex-start;
+            flex-direction: column;
+        }
+    }
+</style>
+
+<body>
+    <header class="header">
+        <img class="header__img" src="./img/logo-platzi-video-BW2.png" alt="">
+    </header>
+
+    <section class="not-found">
+        <h1 class="not-found__title animated pulse">404</h1>
+        <h2 class="not-found__subtitle">Página no encontrada</h2>
+    </section>
+
+    <footer class="footer">
+        <a href="#">Términos de uso</a>
+        <a href="#">Declaración de privacidad</a>
+        <a href="#">Centro de ayuda</a>
+    </footer>
+</body>
+
+</html>
